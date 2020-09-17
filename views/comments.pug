@@ -1,0 +1,26 @@
+//- .review-container
+//-     h3 DAVID SMITH
+//-     p.reviews-para
+//-         | Lorem ipsum dolor sit amet consectular adipisicing elit. Animi iure odio, quod nisi
+//-         | facilis commodi ut sunt ipsam, magnam elius repellat preferendis porro, 
+//-         | iste 
+//-         br
+//-         | voluptas!
+//-     - var a = 0;
+//-     while a < 5
+//-         i.fas.fa-star.icons
+//-         - a++;
+.review-container
+    h3 #{review.user.name}
+    p.reviews-para
+        | #{review.review} 
+        - var a = 0;
+        while a < Math.floor(review.rating/2)
+            i.fas.fa-star.icons
+            - a++;
+        if((review.rating/2) - a >= 0.5)
+            i.fas.fa-star-half-alt.icons
+            - a++;
+        while a < 5
+            i.far.fa-star.icons
+            - a++;

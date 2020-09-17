@@ -1,0 +1,10 @@
+section.how-to
+    h2 STEPS TO FOLLOW
+    .steps-parent
+        .img-container
+            img.howto-img(src='./img/Capture.PNG', alt='')
+        .steps
+            each val, index in {1:'Choose the subscription plan that best fits your needs and sign up today',2:'Order your delicious meal using our mobile app or website. Or you can even call us!',3:'Enjoy your meal after less than 20 minutes. See you the next time!'}   
+                .steps-container.clearfix
+                    .step-val= index
+                    p.steps-para= val 

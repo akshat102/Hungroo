@@ -1,0 +1,34 @@
+.box-container
+    h3.prem #{plan.name}
+    .data
+        .colored-text
+            | $#{plan.price}
+        .month
+            | /month
+        .content
+            | Thats only $#{(plan.price/30).toFixed(2)} for the meal per day
+        hr
+        .checklist
+            .list-item
+                i.fas.fa-check
+                |               #{plan.description}
+            .list-item
+                i.fas.fa-check
+                |               #{plan.ratingsAverage}/10 rating
+            .list-item
+                i.fas.fa-check
+                |               Order 24/7
+            .list-item
+                i.fas.fa-check
+                |              Access to newest creations
+            .list-item
+                i.fas.fa-check
+                |               Free delivery
+    center.two-buttons
+        if user
+            //- button.btn.btn-prem(type='submit') I'm hungry
+            a.btn.btn-empty(href='javascript:;', plan-id=`${plan["_id"]}`).payment  I'm hungry
+            a.btn.btn-prem(href='javascript:;', plan-id=`${plan["_id"]}`).review  Write a review
+        else    
+            a.btn.btn-empty(href='/login')  I'm hungry
+            a.btn.btn-prem(href='/login', plan-id=`${plan["_id"]}`).review  Write a review

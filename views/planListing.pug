@@ -1,0 +1,16 @@
+block content
+    section.features
+        h2 AWESOME FEATURES
+        .container-parent
+            include features
+    include steps
+    include reviews
+    section.premium
+        .premium-container
+            h2 START EATING HEALTHY TODAY
+            .space
+            .prem-container
+                for plan in plans
+                    include planCard
+    include sendMessage
+

@@ -1,0 +1,21 @@
+form.plan-form
+    .plan-form-entry
+        i.fas.fa-apple-alt.plan-icon
+        input#plan-name(type='text', placeholder=' Plan name', name='name')
+    .plan-form-entry
+        i.fas.fa-dollar-sign.plan-icon
+        input#plan-price(type='number', placeholder=' Price', name='price')
+    .plan-form-entry
+        i.fas.fa-dollar-sign.plan-icon
+        input#plan-discount(type='number', placeholder=' Discount ', name='discount')
+    .extras
+    .extras
+    label(for='description') Description   
+    .plan-form-entry-description
+        textarea#plan-description(name='description', cols='30', rows='10')
+    .plan-form-entry
+        i.fas.fa-star.plan-icon
+        input#plan-star(type='number', placeholder=' Rating / 10', name='rating', min='1', max='10') 
+
+                
+    

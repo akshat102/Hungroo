@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;;
+}
+
+header{
+    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.52), rgba(0,0,0, 0.73)),url('../img/pizzaBg.jpg');
+    background-attachment: fixed;
+    height: 50vh;    
+    background-size: cover;
+}
+.forgot-password{
+    margin-top: 19rem;
+    margin-left: 25rem;
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+    position: absolute;
+    border: 1px solid grey;
+    border-radius: 2.5rem;
+    z-index: 20;
+    box-shadow: 1px 1px 20px grey;
+    padding: 2rem;
+    font-size: 100%;
+    justify-content: space-between;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+hr{
+    background-color: black;
+    color: black;
+}
+h2{
+    
+    font-size: 141%;
+    margin-bottom: 0.9rem;
+}
+.content{
+    padding: 1.5rem;
+    text-align: justify;
+    font-size: 150%;
+    letter-spacing: 0.1rem;
+}
+.email-id{
+display: flex;
+margin-left: 2rem;
+width: 70%;
+justify-content: space-between;
+}
+label{
+    font-family: sans-serif;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    
+}
+.form-entry{
+    width: 50%;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(240, 240, 240);
+    color: grey;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.form-entry:hover{
+    background-color: rgb(224, 224, 224);
+}
+input[type='email'],
+input[type='password']{
+    width: 100%;
+    padding: 1rem;
+    padding-left: 2rem;
+    border: none;
+    background-color: transparent;
+    color: grey;
+    outline: none;
+}
+.comment{
+    font-size: 100%;
+    letter-spacing: 0rem;
+    color: grey;
+    text-align: center;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+    width: 50%;
+    padding: 0rem;
+}
+.btn{
+    border: 0.1rem solid cornflowerblue;
+   border-radius: 1rem;
+    margin-right: 2rem;
+    background-color: cornflowerblue;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    font-size: 80%;
+    display: inline-block;
+    justify-content: end;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    outline: none;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 140%;
+}
+
+.reset-passwords{
+    margin-top: 19rem;
+    margin-left: 25rem;
+    height: 55vh;
+    width: 50vw;
+    background-color: white;
+    position: absolute;
+    border: 1px solid grey;
+    border-radius: 2.5rem;
+    z-index: 20;
+    box-shadow: 1px 1px 20px grey;
+    padding: 2rem;
+    font-size: 100%;
+    justify-content: space-between;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+
+/* ----------- footer ----------- */
+footer{
+    height: 15vh;
+    background-size: cover;
+    background-color: rgb(58, 56, 58);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    }
+    .footer-nav-ul{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-nav-list{
+        margin-right: 3rem;
+        margin-top: 1rem;    
+    }
+    .footer-nav-links{
+        color:white;
+        font-size: 141%;
+        padding: 0.5rem;
+    }
+    .space-in-footer{
+        width: 20rem;
+    }
+    .ic{
+       font-size: 141%;
+    }
+    .copyright{
+        padding-top: 1.5rem;
+        color: grey;
+    }
+    

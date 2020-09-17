@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;;
+}
+button{
+    font: 'Pacifico', sans-serif;
+}
+html{
+    font-family: 'Roboto',sans-serif;
+    color: grey;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.52), rgba(0,0,0, 0.73)),url('../img/pizzaBg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.tab {
+    align-self: center;
+    background-color: transparent;
+    color: black;
+    background-color: rgb(224, 224, 224);
+    margin-top: 5rem;
+    width: 40.5vw;
+    height: 7vh;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  /* Style the buttons that are used to open the tab content */
+.tab button {
+    font: 'Pacifico', sans-serif;
+    background-color: white;
+    border: 1px solid rgb(224, 224, 224);
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    margin-top: 0.2rem;
+    width: 20vw;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    outline-color: rgb(224, 224, 224);
+}  
+.tablinks{
+    font: 'Pacifico', sans-serif;
+}
+  /* Change background color of buttons on hover */
+/*.tab button:hover {
+    background-color: cornflowerblue;
+    color: white;
+    border: inherit;
+  }*/
+  /* Create an active/current tablink class */
+.tab button.active {
+    background-color: cornflowerblue;
+    color: white;
+    border: inherit;
+    font: 'Pacifico', sans-serif;
+    outline-color: rgb(224, 224, 224);
+    border: cornflowerblue;
+  }
+ 
+  /* Style the tab content */
+  .tabcontent {
+      display: none;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    background-color: white;
+    height: 80vh;
+    width: 60vw;
+    /*display: inline-block;*/
+    border-radius: 0.7rem;
+  }
+  .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+.img-container{
+    width: 28vw;
+    height: 80vh;
+    padding: 0rem;
+    align-self: start;
+    position: absolute;
+    display: flex;
+}
+.howto-img{
+    margin: 0rem;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+}
+img{
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+}
+
+/* -------------- login -------------- */
+
+.login-container{
+    display: inline-block;
+    justify-content: space-between;
+    position: absolute;
+    height: inherit;
+    margin: 0rem;
+    padding: 0rem;
+    width: 30vw;
+}
+.login-form{
+    width: 100%;
+    height: 100%;
+    transform: scale(0.8);
+    justify-content: space-evenly;
+    padding: 1rem;
+    display: inline-block;    
+}
+
+.form-entry{
+    width: 100%;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 2.5rem;
+    background-color: rgb(240, 240, 240);
+    color: grey;
+    display: flex;
+}
+.form-entry:hover{
+    background-color: rgb(224, 224, 224);
+}
+.extras{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.age{
+    width: 50%;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 140%;
+}
+.blank{
+    width: 50%;
+}
+input[type='text'],
+input[type='name'],
+input[type='number'],
+input[type='email'],
+input[type='confirmPassword'],
+input[type='password']{
+    width: 100%;
+    padding: 1rem;
+    padding-left: 2rem;
+    border: none;
+    background-color: transparent;
+    color: grey;
+    outline: none;
+}
+.btn{
+    border: 0.1rem solid cornflowerblue;
+    text-transform: uppercase;
+    border-radius: 2.5rem;
+    background-color: cornflowerblue;
+    padding: 1rem 1.5rem;
+    font-size: 100%;
+    color: white;
+    width: 100%;
+    outline: none;
+    display: inline-block;
+    letter-spacing: 0.1rem;
+    font-family: 'Pacifico',sans-serif;
+}
+.icon{
+    padding: 1rem 1.5rem;
+}
+.or{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+hr{
+    width: 40%;
+    height: 0.2rem;
+    color: rgb(224, 224, 224);
+    background-color: grey;
+    margin-top: 0.5rem;
+}
+.other-btn{
+    background-color: transparent;
+    letter-spacing: 0.1rem;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 141%;
+    font-family: 'Cormorant Garamond', serif;
+}
+.ic{
+    background-color: transparent;
+    color: white;
+    margin: 0rem 1.5rem;
+    font-size: 1.5rem;
+}
+.reset-pass{
+    color: cornflowerblue;
+}
+.facebook{
+    margin-top: 1.5rem;
+    display: flex;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 2.5rem;
+    background-color: rgb(59, 89, 152);
+    padding: 1rem 1.5rem;
+    font-size: 100%;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+}
+.google{
+    margin-top: 1.5rem;
+    display: flex;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 2.5rem;
+    background-color: rgb(219,68,55);
+    padding: 1rem 1.5rem;
+    font-size: 100%;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+}
+.twitter{
+    margin-top: 1.5rem;
+    display: flex;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 2.5rem;
+    background-color: rgb(0, 172, 238);
+    padding: 1rem 1.5rem;
+    font-size: 100%;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+}
+
+
+
+/*---------------- sign up ---------------------*/
+.signup-container{
+    display: inline-block;
+    justify-content: space-between;
+    position: absolute;
+    height: inherit;
+    margin: 0rem;
+    padding: 0rem;
+    width: 30vw;
+}
+.signup-form{
+    width: 100%;
+    height: 80%;
+    transform: scale(0.8);
+    justify-content: space-evenly;
+    padding: 0rem 1rem;
+    display: inline-block;    
+}
+.male{
+    margin-top: 1rem;
+    font-size: 150%;
+}
+.female{
+    margin-top: 1rem;
+    font-size: 150%;
+}
+.other{
+    margin-top: 1rem;
+    font-size: 150%;
+}
+
+/* ----------- footer ----------- */
+footer{
+    height: 15vh;
+    background-size: cover;
+    background-color: rgb(58, 56, 58);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    }
+    .footer-nav-ul{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-nav-list{
+        margin-right: 3rem;
+        margin-top: 1rem;    
+    }
+    .footer-nav-links{
+        color:white;
+        font-size: 141%;
+        padding: 0.5rem;
+    }
+    .space-in-footer{
+        width: 20rem;
+    }
+    .ic{
+       font-size: 141%;
+    }
+    .copyright{
+        padding-top: 1.5rem;
+        color: grey;
+    }
+    

@@ -1,0 +1,559 @@
+/* universl selector in css is  *  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;;
+}
+html{
+    font-family: 'Roboto',sans-serif;
+    color: grey;
+}
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+li{
+    list-style: none;
+}
+header{
+height: 110vh;
+background-size: cover;
+text-transform: uppercase;
+}
+body{
+    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.52), rgba(0,0,0, 0.73)),url('../img/pizzaBg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.main-heading{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-size: 400%;
+    font-weight: 300;
+    line-height: 125%;
+    letter-spacing: 0.2rem;
+}
+.showcase{
+    position: relative;
+    top: 42vh;
+    left: 20vw;
+    width: 50vw;
+}
+h1{
+    font-family: 'Roboto',sans-serif;
+}
+section{
+    padding-left: 4rem;
+    padding-top:  4rem;
+    padding-right: 4rem;
+    padding-bottom: 6rem;
+    justify-content: center;
+    background-color: white;
+}
+h2{
+text-align: center;
+font-size: 3rem;
+}
+h2:after{
+    content: "";
+    display: block;
+    background-color: cornflowerblue;
+    height: 0.2rem;
+    margin-top: 1.8rem;
+    width: 30vh;
+    margin-left: 38vw;    
+    margin-bottom: 3rem;
+}
+.simple:after{
+    display: none;
+}
+h3{
+    font-size: 150%;  
+}
+.nav-ul{
+display: flex;
+justify-content: flex-end;
+}
+.nav-list{
+margin-right: 1rem;
+margin-top: 1rem;
+
+}
+.nav-links{
+color:white;
+font-size: 141%;
+padding: 0.5rem;
+}
+.nav-links:hover{
+    border-bottom: 0.2rem solid cornflowerblue;
+}
+.btns-container{
+margin-top: 3rem;
+}
+#span-detector{
+    color: cornflowerblue;
+    font-size: inherit;
+    font-weight: bold;
+}
+.btn{
+border: 0.1rem solid cornflowerblue;
+text-transform: uppercase;
+border-radius: 2.5rem;
+margin-right: 2rem;
+background-color: cornflowerblue;
+padding: 1rem 1.5rem;
+font-size: 80%;
+display: inline-block;
+letter-spacing: 0.1rem;
+font-family: 'Pacifico',sans-serif;
+}
+.btn-full{
+color: white;
+transition: transform 0.3s;
+}
+.btn-empty{
+color: cornflowerblue;
+background-color: transparent;
+transition: transform 0.3s, color 0.3s, background-color 0.3s;
+font-family: 'Pacifico',sans-serif;
+}
+.btn-full:hover{
+    transform: scale(1.2);
+    font-size: 80%;
+}
+.btn-empty:hover{
+    color: white;
+    background-color: cornflowerblue;
+    transform: scale(1.2);
+    font-size: 80%;
+}
+.icon{
+    font-size: 300%;
+    color: cornflowerblue;
+    margin-bottom: 2rem;
+}
+p{
+    font-size: 110%;
+    line-height: 150%;
+    text-align: center;
+}
+.container-parent{
+display: flex;
+justify-content: space-evenly;
+}
+.container{
+    background-color: white;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    padding: 4rem;
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+.container:hover{
+    transform: scale(1.1);
+    background-color: white;
+
+}
+.sticky{
+    position: fixed!important;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 2rem;
+    color: grey;
+}
+.sticky .nav-links{
+    color: grey;
+}
+.reviews{
+    background-color: transparent;
+}
+.review-parent{
+    display: flex;
+    justify-content: space-evenly;
+}
+.icons{
+    padding-top: 3rem;
+    padding-right: 1rem;
+    font-size: 200%;
+    color: cornflowerblue;
+    margin-bottom: 0rem;
+}
+.review-container{
+    background-color: rgb(236, 252, 254);
+    margin-top: 3rem;
+    margin-right: 2rem;
+    padding: 3rem;
+    padding-top: 5rem;
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+.reviews-para{
+    padding-top: 2rem;
+    text-align: center;
+}
+.how-to{
+    background-color: rgb(247, 247, 247);
+}
+.steps-parent{
+    display: flex;
+}
+.img-container{
+width: 40%;
+text-align: center;
+}
+.howTo-img{
+    width: 15vw;
+}
+.steps-container{
+    margin-top: 5rem;
+}
+.steps-container:first-child{
+    margin-top: 10rem;
+}
+.steps-para{
+    font-size: 140%;
+}
+.step-val{
+    float: left;
+    margin-right: 1.5rem;
+    font-size: 140%;
+    height: 4rem;
+    width: 4rem;
+    border: 0.1rem solid cornflowerblue;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 1rem;
+    color: cornflowerblue;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* ------------------ premium ----------------- */
+.premium{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: space-around;
+   }
+.premium-container{
+    margin: 0rem;
+    width: inherit;
+}
+.prem-container{
+    display: flex;
+    justify-content: space-around; 
+}
+.plans{
+    display: table-cell;
+}
+   .box-container{
+       border: 0.1rem solid grey;
+       border-radius: 2.5rem;
+       margin-right: 2.5rem;
+       margin-bottom: 2.5rem; 
+       background-color: rgb(247, 247, 247);
+       height: 80vh;
+       width: 25vw;
+       display: inline-block;
+       font-size: 80%;
+       letter-spacing: 0.1rem;
+       padding-top: 2.5rem;
+   }
+   .box-container:hover{
+       transition: transform 0.3s;
+       transform: scale(1.1);
+   }
+   .prem{
+       text-align: center;
+       font-size: 180%;
+   }
+   .data{
+       margin: 2rem;
+       margin-bottom: 1rem;
+       white-space: nowrap;
+       overflow: hidden;
+        max-width: 25vw;
+        text-overflow: ellipsis;
+   }
+   .colored-text{
+       font-size: 500%;
+       color: cornflowerblue;
+       display: inline-block;
+       text-align: center;
+       font-family: 'Roboto', sans-serif;
+   
+   }
+   hr{
+       margin-top: 1rem;
+      height: 0.2rem;
+      background-color: grey;
+   }
+   .month{
+       font-size: 140%;
+       display: inline-block;
+       text-align: justify;
+   }
+   .content{
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+       font-size: 120%;
+       text-align: justify;
+   }
+   .list-item{
+       margin-top: 1rem;
+       font-size: 120%;
+       text-align: justify;
+       justify-content: space-between;
+   }
+   i{
+       color: cornflowerblue;
+       font-size: 120%;
+   }
+   
+.btn-prem{
+    color: white;
+    position: relative;
+    margin-top: 2rem;
+    transition: transform 0.3s;
+}
+.space{
+    height: 3rem;
+}
+
+/*  ------------------- forms -----------------  */
+.signup{
+    background-color: rgb(58, 56, 58);
+    padding-bottom: 0rem;
+}
+.signup-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -3rem;
+}
+.bg-video_content{
+    width: 40%;
+
+}
+.signup-form{
+width: 50%;
+transform: scale(0.8);
+}
+/* attribute selector */
+input[type='text'],
+input[type='email'],
+select,
+textarea{
+    width: 100%;
+    margin: 1rem 0 ;
+    padding: 1rem 0.5rem;
+}
+/* button */
+.form-entry:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+}
+
+
+/* ------------- footer -----------------*/
+footer{
+height: 15vh;
+background-size: cover;
+background-color: rgb(58, 56, 58);
+font-family: 'Roboto', sans-serif;
+color: white;
+}
+.footer-nav-ul{
+    display: flex;
+    justify-content: center;
+}
+.footer-nav-list{
+    margin-right: 3rem;
+    margin-top: 1rem;    
+}
+.footer-nav-links{
+    color:white;
+    font-size: 141%;
+    padding: 0.5rem;
+}
+.space-in-footer{
+    width: 20rem;
+}
+.ic{
+   font-size: 141%;
+}
+.copyright{
+    padding-top: 1.5rem;
+    color: grey;
+}
+
+/* ------------- plans cards --------------- */
+.flip-card {
+    border: 0.0rem solid transparent;
+    border-radius: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 2.5rem;
+    /* background-color: rgb(247, 247, 247); */
+    height: 70vh;
+    width: 25vw;
+    display: inline-block;
+    font-size: 80%;
+    letter-spacing: 0.1rem;
+    /* padding-top: 2.5rem; */
+    perspective: 1000px;
+}
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    width: inherit;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    height: inherit;
+}
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    border: 0.2rem solid grey;
+    border-radius: 2.5rem;
+    background-color: rgb(247, 247, 247);
+    color: black;
+}
+  
+  /* Style the back side */
+  .flip-card-back {
+    border: 0.2rem solid grey;
+    border-radius: 2.5rem;
+    background-color: rgb(247, 247, 247);
+    color: grey;
+    transform: rotateY(180deg);
+}
+
+.prof-ic{
+    font-size: 2000%;
+}
+.stylish-heading{
+    font-family: 'Pacifico',sans-serif;
+    text-transform: uppercase;
+    font-size: 500%;
+}
+.manage-plan-container{
+    margin-right: 2.5rem;
+    margin-top: 2rem;;
+    height: 70vh;
+    width: 25vw;
+    display: inline-block;
+    font-size: 80%;
+    letter-spacing: 0.1rem;
+}
+.manage-data{
+    margin: 2rem;
+    margin-bottom: 1rem;
+    max-width: 25vw;
+    text-overflow: ellipsis;
+    text-align: center;
+    height: 90%;
+}
+.manage-colored-text{
+    font-size: 500%;
+    color: cornflowerblue;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Pacifico', sans-serif;
+
+}
+.btn-manage{
+    width: 70%;
+    border-color: grey;
+    color: grey;
+    background-color: rgb(247, 247, 247);
+    position: relative;
+    transition: transform 0.3s;
+    margin-right: 0rem;
+}
+.simple{
+    color: cornflowerblue;
+}
+.add{
+    border: 0.2rem dashed grey;
+}
+.plan-form{
+    margin: 0rem;
+    justify-content: space-evenly;
+    display: inline;
+}
+.plan-form-entry{
+    height: 10%;
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 2.5rem;
+    background-color: rgb(240, 240, 240);
+    color: grey;
+    display: flex;
+}
+/* .form-entry:hover{
+    background-color: rgb(224, 224, 224);
+} */
+.plan-icon{
+    padding: 0.7rem 1.5rem;
+}
+#plan-price,
+#plan-name,
+#plan-discount,
+#plan-star,
+#plan-description{
+    width: 100%;
+    padding-left: 1rem;
+    border: none;
+    background-color: transparent;
+    color: grey;
+    outline: none;
+}
+#plan-description{
+    padding: 0rem 1rem;
+    height: 80%;
+}
+.extras{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.plan-form-entry-description{
+    height: 30%;
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    color: grey;
+    display: flex;
+}
+/* .two-buttons{
+    display: inline-flex;
+} */
+/* .review,
+.payment{
+    font-size: 60%;
+    font-weight: bolder;
+} */

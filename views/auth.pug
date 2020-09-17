@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title Document
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto&display=swap')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Pacifico&display=swap')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css', crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap', rel='stylesheet')
+        link(rel='stylesheet', href='./css/login-style.css')
+    body
+        center
+            .tab
+                button#defaultOpen.tablinks(onclick="openTabs(event, 'Login')") Login
+                button.tablinks(onclick="openTabs(event, 'Signup')") Signup
+            #Login.tabcontent
+                .img-container
+                    img.howto-img(src='./img/pizza.jpg', alt='')
+                .login-container
+                    include loginForm
+            #Signup.tabcontent
+                .img-container
+                    img.howto-img(src='./img/pizza.jpg', alt='')
+                .signup-container
+                    include signupForm
+        include footer
+        script(src="https://unpkg.com/axios/dist/axios.min.js")
+        script(src="https://js.stripe.com/v3/")
+        script(src='./js/login.js')
+        script(src='./js/frontend.js')

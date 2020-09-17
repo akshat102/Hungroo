@@ -1,0 +1,28 @@
+form.login-form
+    .form-entry
+        i.fas.fa-envelope.icon
+        input#login-email(type='email', placeholder='Your Email', name='email')
+    .form-entry
+        i.fas.fa-key.icon
+        input#login-password(type='password', placeholder='Enter your password', name='password')
+        i.far.fa-eye.icon(onclick='loginChangeIcon(this)')
+    .extras
+        a.reset-pass(href='/forgetPassword') Forgot Password?
+    .form-entry
+        a.btn.btn-full.form-button.login-button(href='javascript:;') Login
+    .or
+        hr
+        p  OR 
+        hr
+    .facebook
+        i.fab.fa-facebook-f.ic
+        button.other-btn(type='submit')  Facebook
+        div
+    .google
+        i.fab.fa-google.ic
+        button.other-btn(type='submit')  Google
+        div
+    .twitter
+        i.fab.fa-twitter.ic
+        button.other-btn(type='submit')  Twitter
+        div

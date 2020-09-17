@@ -1,0 +1,28 @@
+section.signup
+    h2 CONTACT US
+    .signup-container
+        video.bg-video_content(autoplay='', muted='', loop='')
+            source(src='Avocado.mp4', type='video/mp4')
+        form.signup-form(action='/signup', method='POST')
+            .form-entry
+                label(for='name') Name
+                input#name(type='text', placeholder='Your Name', name='name')
+            .form-entry
+                label(for='email') Email
+                input#email(type='email', placeholder='Your Email', name='email')
+            .form-entry
+                label(for='') How did you find us
+                select(id='')
+                    option(value='Friends', selected='') Friends
+                    option(value='Advertisement') Advertisement
+                    option(value='Search') Search
+                    option(value='Other') Other
+            .form-entry
+                label(for='comment') Drop us a line
+                textarea#comment(name='comment', cols='30', rows='10')
+            .form-entry
+                input(type='checkbox', id='', name='', checked='')
+                p
+                    | I have read and agree with all the Privacy Policy and Terms of Conditions
+            .form-entry
+                button.btn.btn-full(type='submit')  SEND MESSAGE

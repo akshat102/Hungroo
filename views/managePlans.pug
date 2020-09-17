@@ -1,0 +1,48 @@
+extends base 
+block content
+    section
+        .premium-container
+            h2 Manage Your Plans
+            for plan in plans
+                .manage-plan-container
+                    .flip-card
+                        .flip-card-inner
+                            .flip-card-front
+                                .manage-data
+                                    .manage-colored-text
+                                        | #{plan.name} Plan
+                            .flip-card-back
+                                .manage-data
+                                    .content
+                                        h3 #{plan.description}
+                                    .content
+                                        h3 worth $ #{plan.price}
+                                    .content
+                                        h3 with $#{plan.discount} discount
+                                    .content
+                                        h2.simple #{plan.ratingsAverage}/10
+                                        - var a = 0;
+                                        while a < Math.floor(plan.ratingsAverage/2)
+                                            i.fas.fa-star.icons
+                                            - a++;
+                                        if((plan.ratingsAverage/2) - a >= 0.5)
+                                            i.fas.fa-star-half-alt.icons
+                                            - a++;
+                                        while a < 5
+                                            i.far.fa-star.icons
+                                            - a++;
+                        center
+                            button.btn.btn-manage Edit Plan
+            .flip-card
+                .flip-card-inner
+                    .flip-card-front.add
+                        .manage-data
+                            .manage-colored-text
+                                    i.fas.fa-plus-circle.icons
+                    .flip-card-back.add
+                        .manage-data
+                            include addPlans
+                center
+                    a.btn.btn-manage.add-plan(href='javascript:;') Add Plan
+                
+                        

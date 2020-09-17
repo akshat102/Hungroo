@@ -1,0 +1,39 @@
+if(key)
+    nav(style="position:relative")
+        ul.nav-ul
+            li.nav-list
+                a.nav-links(href='')  Feature
+            li.nav-list
+                a.nav-links(href='')  Details
+            li.nav-list
+                a.nav-links(href='')  Reviews
+            li.nav-list
+                a.nav-links(href='/plans')  Plans
+            if user
+                li.nav-list
+                    a.nav-links(href='/profilePage')  #{user.name}
+                li.nav-list
+                    a.nav-links(href='javascript:;').logout  LOGOUT
+            else
+                li.nav-list
+                    a.nav-links(href='/login')  Login
+else
+    nav.sticky(style="position:fixed")
+        ul.nav-ul
+            li.nav-list
+                a.nav-links(href='')  Feature
+            li.nav-list
+                a.nav-links(href='')  Details
+            li.nav-list
+                a.nav-links(href='')  Reviews
+            li.nav-list
+                a.nav-links(href='/plans')  Plans
+            if user
+                li.nav-list
+                    a.nav-links(href='/profilePage')  #{user.name}
+                li.nav-list
+                    a.nav-links(href='javascript:;').logout  LOGOUT
+            else
+                li.nav-list
+                    a.nav-links(href='/auth')  Login
+include header

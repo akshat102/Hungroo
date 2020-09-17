@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title #{title}
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto&display=swap')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Pacifico&display=swap')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css', crossorigin='')
+        link(rel='stylesheet', href='./css/style.css')
+    body
+        header
+            include nav
+        block content
+        include footer
+    script(src="https://unpkg.com/axios/dist/axios.min.js")
+    script(src="https://js.stripe.com/v3/")
+    script(src='./js/frontend.js')
+    script(src='./js/navscript.js')
+    script(type='text/javascript', src='./js/script.js')

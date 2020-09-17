@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/login-style.css">
+</head>
+<body>
+   <center>
+    <div class="tab">
+        <button class="tablinks" onclick="openTabs(event, 'Login')">Login</button>
+        <button class="tablinks" onclick="openTabs(event, 'Signup')">Signup</button>
+      </div>
+      <div id="Login" class="tabcontent">
+            <div class="img-container">
+              <img src="./img/pizza.jpg" alt="" class="howto-img">
+            </div>
+            <div class="login-container">
+                <form class="login-form" action="/login" method="POST">
+                  <div class="form-entry">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="email" id="email" placeholder="Your Email" name="email">
+                  </div>
+                   <div class="form-entry">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" id="password" placeholder="Enter your password" name="password">
+                    <i class="far fa-eye icon"></i>
+                  </div>
+                  <div class="extras">
+                    <a class="reset-pass" href="C:\Users\aknit\WebDevBPIT\FoodAppliction\Fair\forgot-password.html" target="_blank" rel="noopener noreferrer">Forgot Password?</a>
+                  </div>
+                  <div class="form-entry">
+                    <button class=" btn btn-full" type="submit"> Login</button>
+                  </div>
+                  <div class="or">
+                    <hr /><p> OR </p><hr />
+                </div>
+                <div class="facebook">
+                    <i class="fab fa-facebook-f ic"></i>
+                <button class=" other-btn" type="submit"> Facebook</button>
+                <div></div>
+                </div>
+                <div class="google">
+                    <i class="fab fa-google ic"></i>
+                <button class=" other-btn" type="submit"> Google</button>
+                <div></div>
+                </div>
+                <div class="twitter">
+                    <i class="fab fa-twitter ic"></i>
+                    <button class=" other-btn" type="submit"> Twitter</button>
+                    <div></div>    
+                </div>
+                </form>
+            </div>
+        </div>
+      <div id="Signup" class="tabcontent">
+        <div class="img-container">
+            <img src="./img/pizza.jpg" alt="" class="howto-img">
+          </div>
+          <div class="signup-container">
+              <form class="signup-form" action="/login" method="POST">
+                <div class="form-entry">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" id="name" placeholder="User name" name="name">
+                  </div>
+                  <div class="form-entry">
+                  <i class="fas fa-envelope icon"></i>
+                  <input type="email" id="email" placeholder="Your Email" name="email">
+                </div>
+                <div class="extras">
+                    <div class="blank"></div>
+                    <label class="age" for="age">Age</label>
+                <div class="form-entry">
+                  <input type="number" id="age" placeholder=" " name="age">
+                  </div>
+                  
+                </div>
+                 <div class="form-entry">
+                  <i class="fas fa-key icon"></i>
+                  <input type="password" id="password" placeholder="Enter your password" name="password">
+                  <i class="far fa-eye icon" onclick="changeIcon(this)"></i>
+                </div>
+                <div class="form-entry">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" id="password" placeholder="Re-enter your password" name="password">
+                  </div>
+                  <div class="extras">
+                    <div class="male"><input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label></div>
+                        <div class="female"><input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                            </div>
+                    <div class="other"><input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label></div>
+                  </div>
+                <div class="extras">
+                    <input type="checkbox" id="" name="" checked name="selected">
+          <p>
+            I have read and agree with all the Privacy Policy and Terms of Conditions
+          </p>
+        </div>
+        <div class="extras">
+            <div class="blank"></div>
+            <div class="form-entry">
+                <button class="btn btn-full" type="submit"> Sign up</button>
+              </div>
+            <div class="blank"></div>
+        </div>
+                
+              </form>
+            </div>
+    </div>
+   </center>     
+   <script src="./js/login.js"></script>
+</body>
+</html>

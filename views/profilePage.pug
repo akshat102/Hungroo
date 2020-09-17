@@ -1,0 +1,45 @@
+//- extends base
+//- block content
+//-   h2 User Page
+//-   .profile-container
+//-     h2
+//-       p #{user.name}
+//-       p #{user.email}
+//-       p 
+//-         .img-container
+//-           img.howto-img(src=`${user.profileImage}`)  
+//-       input(type="file", name="").updateProfile
+//-       if user.role=="admin"
+//-         a(href="/manageUsers") Manage Users
+//-         a(href="/managePlans") Manage Plans
+extends base
+block content
+    section.features
+        h2 User Page
+        .container
+            .steps-parent
+                if user.gender=="male"
+                    .img-container
+                        i.fa.fa-male.prof-ic
+                        p.copyright
+                            p #{user.role}
+                else
+                    .img-container
+                        i.fa.fa-female.prof-ic
+                        p.features-para
+                            p #{user.role}
+                .steps
+                    h3 
+                        p.stylish-heading #{user.name}
+                    h3
+                        p.features-para
+                            | #{user.email}
+                        p.features-para
+                            | Age:      #{user.age} yrs.
+                        if user.role=="admin"
+                            p.features-para
+                                a(href="/manageUsers") Manage Users
+                            p.features-para
+                                a(href="/managePlans") Manage Plans
+                        
+            
