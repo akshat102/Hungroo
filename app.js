@@ -38,7 +38,6 @@ app.use("*", function (err,req, res, next) {
     message: err.message
   });
 });
-//console.log(process.env);
 const port = process.env.port|| 3005
 app.listen(port, function () {
   console.log("Server is listening at port 3005");
@@ -59,27 +58,6 @@ app.listen(port, function () {
 //   }
 //   next();
 // });
-
-// app.use(function logger(req, res, next) {
-//   console.log("Req url: " + req.url);
-//   console.log(req.body);
-//   next();
-// });
-// app.get("/api/plans", function (req, res) {
-//   res.status(200).json({
-//     status: "Request Recieved",
-//   });
-// });
-// 3.
-// creation => post
-
-
-// **************************************plansection**************************
-
-
-
-
-// ****************************************************user section**********************************************************
 
 
 

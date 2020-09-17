@@ -1,5 +1,5 @@
 {
-  "name": "fair",
+  "name": "hungroo",
   "version": "1.0.0",
   "main": "app.js",
   "engines": {
@@ -18,11 +18,20 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.13",
+    "multer": "^1.4.2",
     "nodemon": "^2.0.3",
     "pug": "^2.0.4",
     "sharp": "^0.25.2",
     "stripe": "^8.50.0"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "a food application",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshat102/Hungroo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akshat102/Hungroo/issues"
+  },
+  "homepage": "https://github.com/akshat102/Hungroo#readme"
 }
